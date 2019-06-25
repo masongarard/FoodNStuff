@@ -15,12 +15,14 @@ namespace FoodNStuffMVC.Models
         public string Name { get; set; }
 
         [Required]
+        [Display(Name="Number In Stock")]
         public int InventoryCount { get; set; }
 
         [Required]
         public decimal Price { get; set; }
 
         [Required]
+        [Display(Name ="Do humans generally consider it food?")]
         public bool IsFood { get; set; }
     }
 }
